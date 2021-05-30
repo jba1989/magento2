@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @var \Mageplaza\HelloWorld\Block\Display $block
+ */
+$data = json_decode($block->showExchangeRate(), true);
+
+echo '<h2>Exchange Rate</h2>';
+
+foreach($data as $key => $row) {
+    echo $key . " : " . $row['Exrate'] . "</br>";
+}
