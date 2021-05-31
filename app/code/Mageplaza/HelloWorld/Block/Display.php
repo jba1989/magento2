@@ -18,7 +18,7 @@ class Display extends \Magento\Framework\View\Element\Template
 	{
 		$client = new Client();
         $response = $client->get('https://tw.rter.info/capi.php');
-        
+
         return $response->getBody();
 	}
 }
